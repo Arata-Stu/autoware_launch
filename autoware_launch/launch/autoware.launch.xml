@@ -92,7 +92,13 @@
 
   <!-- Localization -->
   <group if="$(var launch_localization)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_localization_component.launch.xml"/>
+    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_localization_component.launch.xml">
+      <arg name="ndt_enabled" value="true"/>
+      <arg name="gnss_enabled" value="false"/>
+      <arg name="ekf_enabled" value="true"/>
+      <arg name="yabloc_enabled" value="false"/>
+      <arg name="stop_check_enabled" value="true"/>
+    </include>
   </group>
 
   <!-- Perception -->
