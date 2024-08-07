@@ -97,7 +97,7 @@
       <arg name="gnss_enabled" value="false"/>
       <arg name="ekf_enabled" value="true"/>
       <arg name="yabloc_enabled" value="false"/>
-      <arg name="stop_check_enabled" value="true"/>
+      <arg name="stop_check_enabled" value="false"/>
     </include>
   </group>
 

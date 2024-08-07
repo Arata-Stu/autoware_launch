@@ -5,7 +5,7 @@
       pose: $(var user_defined_initial_pose/pose)
 
     gnss_pose_timeout: 3.0 # [sec]
-    stop_check_duration: 3.0 # [sec]
+    stop_check_duration: 0.5 # [sec]
     ekf_enabled: $(var ekf_enabled)
     gnss_enabled: $(var gnss_enabled)
     yabloc_enabled: $(var yabloc_enabled)
